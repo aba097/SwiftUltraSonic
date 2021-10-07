@@ -15,7 +15,6 @@ class UltraSonic {
     
     private let audioEngine = AVAudioEngine()
     private let player = AVAudioPlayerNode()
-    private var buffer: AVAudioPCMBuffer!
     let session = AVAudioSession.sharedInstance()
 
     init() {
@@ -57,7 +56,7 @@ class UltraSonic {
         try! session.setActive(true)
 
         //再生音作成
-        buffer = makeBuffer()
+        let buffer = makeBuffer()
         //Nodeを追加
         audioEngine.attach(player)
         //Format定義
