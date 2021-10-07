@@ -1,8 +1,7 @@
 //
 //  UltraSonic.swift
-//  Tmp
 //
-//  Created by 相場智也 on 2021/10/07.
+//  Created by aba097 on 2021/10/07.
 //
 
 import Foundation
